@@ -10,7 +10,7 @@ const getMeals = async () => {
     ?.map((show) => {
       return `
         <div class="flex  flex-col flex-center meal-card">
-            <div><img class="meal-img" src="${show.strMealThumb}" alt="" /></div>
+            <div><img class="meal-img" src="" alt="" /></div>
               <p class="space">${show.strMeal}</p>
                 <div class="like flex flex-center">
                 <button class="like-btn" data-show= "${show.idMeal}" ><i class="fa-sharp fa-regular fa-heart fa-xl"></i></button>
