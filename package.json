@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "test": "jest --coverage",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
