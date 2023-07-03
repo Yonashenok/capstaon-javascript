@@ -6,17 +6,23 @@ module.exports = {
   entry: {
     bundle: path.resolve(__dirname, 'src/index.js'),
   },
+  devtool: 'inline-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      template: 'src/index.html',
+    }),
+  ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   devServer: {
-    static: { directory: path.resolve(__dirname, 'dist') },
-    port: 3000,
-    hot: true,
-    open: true,
-    compress: true,
-    historyApiFallback: true,
+    static: './dist',
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -30,10 +36,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Webpack App',
-      template: 'src/index.html',
-    }),
-  ],
 };
