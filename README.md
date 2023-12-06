@@ -33,14 +33,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
-  </ul>
-</details>
 
 </details>
 
@@ -57,9 +49,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
 
-- The link for Leaderboard project [Live Demo Link](https://meryemsanem.github.io/leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
